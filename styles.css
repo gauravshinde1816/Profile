@@ -9,6 +9,9 @@
   opacity: 0.8;
   cursor: pointer;
 }
+.hidden {
+  visibility: hidden;
+}
 
 .bg-black {
   background: black;
