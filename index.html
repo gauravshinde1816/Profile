@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
         integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
         crossorigin="anonymous" />
+    <!-- Animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles.css">
     <title>PortFolio</title>
@@ -154,7 +157,7 @@
 
                     </div>
                     <div class="col-lg-4">
-                        <div class="card ">
+                        <div data-aos="fade-up" data-aos-delay="50" class="card ">
                             <div class="card-header">
                                 <h4>Backend</h4>
                             </div>
@@ -249,7 +252,7 @@
                 <ul class="timeline ">
                     <li>
                         <div class="timeline-badge"><i class="fa fa-university"></i></div>
-                        <div class="timeline-panel">
+                        <div data-aos="fade-up" class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-title">Pune Institute of Computer Technology</h4>
                                 <p class="lead  text-success">2019 - 2023</p>
@@ -264,7 +267,7 @@
                         </div>
                     </li>
 
-                    <li class="timeline-inverted">
+                    <li class="timeline-inverted" data-aos="fade-up" data-aos-delay="50">
                         <div class="timeline-badge danger"><i class="fa fa-university"></i></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -577,6 +580,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
         integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="./main.js"></script>
 
     <script>
@@ -589,6 +594,7 @@
             $(this).ekkoLightbox();
         })
 
+        AOS.init();
     </script>
 
 </body>
